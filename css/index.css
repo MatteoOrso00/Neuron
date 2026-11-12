@@ -154,7 +154,7 @@ a.btn {
   gap: var(--size-md)
 }
 
-  /* Header */
+  /* Hero */
 
 .hero{
   max-width: var(--size-canvas);
@@ -181,8 +181,152 @@ a.btn {
   align-items: start;
   gap: var(--size-sm);
   width: 100%;
+}
 
+
+
+/* Cta */
+
+
+.cta__block {
+    max-width: var(--size-block);
+    margin: 0 auto;
+
+    display: flex;
+    gap: var(--size-lg);
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.cta__image {
+    flex: 1 1 300px;
+    border-radius: var(--radius-samll);
+}
+
+.cta__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--size-md);
+
+    flex: 1 1 300px;
+}
+
+.cta__heading {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-sm);
+}
+
+/* Features */
+
+.features__block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+
+}
+.features__card{
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-sm);
+  padding: var(--size-sm);
+
+  & h3{
+    display: inline-flex;
+    gap: var(--size-sm);
+    align-items: center;
+  }
+}
+
+
+/* Products */
+
+.products{
+}
+.products__block{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--size-sm);
+
+}
+.cards-product{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--size-sm);
+  padding: var(--size-sm) 0;
+  align-self: stretch;
+}
+
+.card-product{
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-sm);
+  
+  & img{
+    max-height: 12rem;
+  }
+}
+
+
+/* Precios */
+
+.precios__block{
+  display: flex;
+  justify-content: center;
+  gap: var(--size-sm);
+  
 
 
 }
+.card-precios{
+  display: flex;
+  flex-direction: column;
+  padding: var(--size-md);
+  gap: var(--size-lg);
+  align-items: center;
 
+  background-color: var(--color-light);
+  border-radius: 4px;
+}
+
+  .card-precios:nth-child(2){
+    background-color: var(--color-dark);
+    color: white;
+  }
+
+  .card-precios:nth-child(2) .btn {
+    background-color: white;
+    color: #1F1F1F;
+  }
+
+
+.start-card{
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-sm);
+  align-items: center;
+
+}
+.end-card ul{
+display: flex;
+flex-direction: column;
+gap: var(--size-xs);
+}
+
+
+.ri-checkbox-circle-line {
+    color: var(--color-dark);
+}
+
+
+.ri-close-circle-line {
+    color: #e05252;
+}
+
+
+.card-precios:nth-child(2) .ri-checkbox-circle-line {
+    color: white;
+}
