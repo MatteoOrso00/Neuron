@@ -37,6 +37,12 @@
   font-family: "instrument sans", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+
+}
+
+
 img {
   max-width: 100%;
   width: 100%;
@@ -286,8 +292,7 @@ label:not([for="acceptance"]){
 
 /* Products */
 
-.products{
-}
+
 .products__block{
   display: flex;
   flex-direction: column;
@@ -462,6 +467,8 @@ gap: var(--size-xxs);
   gap: var(--size-sm);
 }
 
+
+
 /* Footer */
 
 
@@ -506,3 +513,74 @@ gap: var(--size-xxs);
   gap: var(--size-md);
   opacity: 80%;
 }
+
+
+.hero-small__background--services{
+  background-color: var(--color-dark);
+  padding: var(--size-md);
+  color: var(--color-light);
+  min-height: 30vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%), url("../media/Services-banner.webp");
+
+}
+ .hero-small__background--about{
+  background-color: var(--color-dark);
+  padding: var(--size-md);
+  color: var(--color-light);
+  min-height: 30vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%), url("/media/About-banner.webp");
+
+}
+ 
+.block-cta-down-services{
+  display: flex;
+  flex-direction: column;
+  gap:var(--size-md) ;
+}
+
+
+.hero-small__background--news{
+  background-color: var(--color-dark);
+  padding: var(--size-md);
+  color: var(--color-light);
+  min-height: 30vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%), url("/media/News-banner.webp");
+
+}
+
+.hero-small__background--contact{
+  background-color: var(--color-dark);
+  padding: var(--size-md);
+  color: var(--color-light);
+  min-height: 30vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%), url("/media/Contact-banner.webp");
+
+}
+
+.link-contact{
+  text-decoration:underline;
+
+}
+
+           
+
