@@ -203,12 +203,63 @@ label:not([for="acceptance"]){
   gap: var(--size-md)
 }
 
+#popup-menu {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-light);
+  display: none;
+  align-items: center;
+  padding: var(--size-lg);
+  z-index: 10;
+}
+
+.close-popup {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger {
+    display: inline-block;
+    font-size: 2rem;
+  }
+
+  #popup-menu:target {
+    display: flex;
+  }
+}
+
+.popup-menu__nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-md);
+}
+
+
+
+
+
   /* Hero */
 
-.hero{
+.hero ,.hero-small{
   max-width: var(--size-canvas);
   margin: 0 auto;
   padding: 0 var(--size-xs);
+}
+
+.hero__background,
+.hero-small__background {
+  border-radius: var(--radius-small);
 }
 
 .hero__background{
@@ -224,6 +275,7 @@ label:not([for="acceptance"]){
   background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%), url("../media/Home-banner.webp");
 
 }
+
 .hero__block{
   display: flex;
   flex-direction: column;
@@ -475,6 +527,7 @@ gap: var(--size-xxs);
 
 .footer{
   padding:var(--size-xs) ;
+  padding-top: var(--size-md);
 
 }
 .footer-block{
@@ -538,7 +591,7 @@ gap: var(--size-xxs);
   flex-direction: column;
   justify-content: center;
 
-  background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%), url("/media/About-banner.webp");
+  background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%), url("../media/About-banner.webp");
 
 }
  
@@ -559,7 +612,7 @@ gap: var(--size-xxs);
   flex-direction: column;
   justify-content: center;
 
-  background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%), url("/media/News-banner.webp");
+  background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%), url("../media/News-banner.webp");
 
 }
 
@@ -573,7 +626,7 @@ gap: var(--size-xxs);
   flex-direction: column;
   justify-content: center;
 
-  background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%), url("/media/Contact-banner.webp");
+  background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%),  url("../media/Contact-banner.webp");
 
 }
 
@@ -584,3 +637,19 @@ gap: var(--size-xxs);
 
            
 
+.features--contact .features__block {
+  gap: var(--size-sm);
+}
+
+
+.features--contact .features__card {
+  background-color: var(--color-light);
+  border-radius: var(--radius-small);
+}
+
+.hero__background,
+.hero-small__background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
