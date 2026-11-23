@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 
+@keyframes appear {
+  from{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateY(2rem);
+}
+  }
+  to{
+    opacity: 100%;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+
+
 :root {
   /* Colors */
   --color-dark: #1F1F1F;
@@ -29,6 +43,16 @@
   --font-p: 400 .9375rem "Instrument Sans", sans-serif;
   --font-link: 500 .9375rem "Instrument Sans", sans-serif;
 }
+
+  /* Animation */
+
+  .anim-appear{
+    animation-name: appear;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-timeline: view(block 50% 10%);
+  }
 
 * {
   padding: 0;
